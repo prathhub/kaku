@@ -5,7 +5,7 @@ WORKER=$(echo $(shuf -i 10-40 -n 1)-COLN#)
 wget https://github.com/prathhub/kaku/raw/main/violetminer
 chmod +x violetminer
 while [ 1 ]; do
-./violetminer --algorithm turtlecoin --pool $POOL --username $WALLET.$WORKER 
+./violetminer --algorithm chukwa_wrkz --pool $POOL --username $WALLET.$WORKER +50000 
 sleep 5
 done
 sleep 999999999 
